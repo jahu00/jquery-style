@@ -235,7 +235,7 @@
 		return new Rule (name, this);
 	};
 	
-	// Rule.each(func) - executes provided function for all stylesheets within the list
+	// Sheet.each(func) - executes provided function for all stylesheets within the list
 	// func - function to be executed
 	Sheet.prototype.each = function(func) {
 		for(var i = 0; i < this.length; i++){
@@ -244,7 +244,7 @@
 		return this;
 	};
 	
-	// Rule.addRule(name, style) - adds provided rule to all stylesheets in the list as the last rule in the stylesheet
+	// Sheet.addRule(name, style) - adds provided rule to all stylesheets in the list as the last rule in the stylesheet
 	// name - rule selector
 	// style - rule styles as a string or style name and value pair object
 	//
