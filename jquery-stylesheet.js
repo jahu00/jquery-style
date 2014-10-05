@@ -99,6 +99,7 @@
 	//
 	// Rule.css(data, index) - set multiple styles for all rules matching provided index within the parent stylesheet
 	// data - object containing style name and value pairs
+	// index - rule index
 	//
 	// Example: $('#my-style').styleSheet().rule('p').css({'color' : 'red', 'font-weight' : 'bold'}, 0)
 	Rule.prototype.css = function() {
