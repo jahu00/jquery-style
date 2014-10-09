@@ -308,16 +308,16 @@
 	
 	// wrapper for styleSheet().rule(name, index)
 	$.fn.cssRule = function(name, index) {
-		return styleSheet().rule(name, index);
+		return this.styleSheet().rule(name, index);
 	};
 	
 	// wrapper for styleSheet().addRule(name, style, index)
 	$.fn.addCssRule = function(name, style, index) {
-		return styleSheet().addRule(name, style, index);
+		return this.styleSheet().addRule(name, style, index);
 	};
 	
 	// wrapper for styleSheet().rule(name, index).remove();
 	$.fn.removeCssRule = function(name, index) {
-		return styleSheet().rule(name, index).remove();
+		return this.styleSheet().rule(name, index).remove();
 	};
 })(jQuery);
